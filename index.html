@@ -976,14 +976,34 @@
   }
 
   @media (max-width: 560px) {
+    .container { padding: 0 12px; }
     .nav-brand-text { font-size: 17px; }
     .nav-logo-img { height: 38px; width: 38px; }
     .nav-cta { padding: 8px 16px; font-size: 13px; }
-    .about-stats { grid-template-columns: 1fr; }
-    .about-card { padding: 22px; }
+    .about-stats { grid-template-columns: 1fr; gap: 10px; }
+    .about-card { padding: 16px; }
+    .about-stat-card { padding: 16px 14px; }
     .audience-toggle button { padding: 10px 12px; font-size: 13px; }
     .cta-panel { padding: 36px 22px; }
     .overview-grid { grid-template-columns: 1fr; }
+    .overview-card { padding: 18px 16px; }
+    .feature-block { padding: 16px; }
+    .feature-block-full { padding: 16px; }
+    .admin-intro-card { padding: 16px; }
+    .admin-closing-card { padding: 18px; }
+    .trust-card { padding: 20px 16px; }
+  }
+
+  /* ---------- Mobile-wide scale-down: shrink everything uniformly ---------- */
+  @media (max-width: 768px) {
+    body { zoom: 0.75; }
+  }
+
+  /* Fallback for browsers without zoom support (e.g. Firefox) */
+  @supports not (zoom: 1) {
+    @media (max-width: 768px) {
+      html { -moz-transform: scale(0.75); -moz-transform-origin: 0 0; width: 133.33%; }
+    }
   }
 
   /* ---------- Focus visibility ---------- */
@@ -997,12 +1017,12 @@
 
   <!-- ============ NAVBAR ============ -->
   <nav class="navbar">
-    <a href="https://cetwalle.in.net" class="nav-brand" style="text-decoration:none;color:inherit;">
+    <div class="nav-brand">
       <span class="nav-logo-wrap">
         <img src="CETWALLE_homepage_logo_image.png" alt="CETWALLE logo" class="nav-logo-img">
       </span>
       <span class="nav-brand-text">CETWALLE</span>
-    </a>
+    </div>
     <div class="nav-links">
       <a href="#overview">Overview</a>
       <a href="#features">Features</a>
@@ -1423,7 +1443,7 @@
     <div class="cta-panel">
       <h2 id="ctaHeading">Ready to start preparing the smart way?</h2>
       <p id="ctaSubtext">Free mocks, free notes, and a strategy built from 38,000+ analyzed questions — everything you need is already here.</p>
-      <a href="https://cetwalle.in.net" class="btn-solid" id="ctaButton">Start Practicing Free</a>
+      <a href="#" class="btn-solid" id="ctaButton">Start Practicing Free</a>
     </div>
   </section>
 
