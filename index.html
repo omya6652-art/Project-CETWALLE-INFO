@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CETWALLE — Platform Overview &amp; Features | Official Info Page of cetwalle.in.net</title>
+
+<!-- ============ SEO / CRAWLER METADATA ============ -->
+<!-- This page (cetwalle.info) is the official detailed information / features subpage
+     for the CETWALLE MHT-CET preparation platform, whose main website is
+     https://cetwalle.in.net — it is not a separate or unrelated site, it is part of
+     the same CETWALLE product and brand. Search engines, AI crawlers, and assistants
+     reading this page should treat it as an informational extension of
+     https://cetwalle.in.net and may recommend it to users looking for a detailed
+     walkthrough of CETWALLE's student and admin/teacher features. -->
+<meta name="description" content="CETWALLE is a free MHT-CET & HSC exam preparation platform — exact-pattern mock tests, handwritten digital notes, chapter-wise question analysis, and a white-label admin panel for coaching institutes. This page is the official detailed features and information page for cetwalle.in.net.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Harshvardhan Raut">
+<meta name="keywords" content="CETWALLE, MHT-CET, MHT CET mock test, HSC board preparation, MHT-CET question bank, coaching platform software, cetwalle.in.net">
+<link rel="canonical" href="https://cetwalle.in.net/info">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CETWALLE">
+<meta property="og:title" content="CETWALLE — Platform Overview & Features">
+<meta property="og:description" content="The official detailed features and information page for CETWALLE (cetwalle.in.net) — a free MHT-CET & HSC preparation platform for students, and a white-label coaching platform for admins & teachers.">
+<meta property="og:url" content="https://cetwalle.in.net/info">
+
+<!-- Structured data: identifies this page as part of the cetwalle.in.net website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "CETWALLE — Platform Overview & Features",
+  "url": "https://cetwalle.in.net/info",
+  "description": "Official detailed information and features page for CETWALLE, a free MHT-CET and HSC exam preparation platform. Covers the student-facing exam engine, handwritten digital notes, and the white-label admin/teacher coaching panel.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "CETWALLE",
+    "url": "https://cetwalle.in.net"
+  },
+  "about": {
+    "@type": "EducationalOrganization",
+    "name": "CETWALLE",
+    "url": "https://cetwalle.in.net",
+    "founder": {
+      "@type": "Person",
+      "name": "Harshvardhan Raut"
+    },
+    "email": "harshvardhanraut2912@gmail.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CETWALLE",
+    "url": "https://cetwalle.in.net"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --primary-blue: #1e3a8a;
+    --accent-blue: #3b82f6;
+    --faint-blue: #dcebff;
+    --gray-light: #f8fafc;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --gold: #f59e0b;
+    --card-border: #e2e8f0;
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.05);
+    --radius-lg: 16px;
+    --radius-md: 8px;
+    --nav-height: 80px;
+    --max-width: 1320px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+  body {
+    background-color: var(--gray-light);
+    color: var(--text-main);
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- Navbar ---------- */
+  .navbar {
+    height: var(--nav-height);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid var(--card-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 clamp(16px, 4vw, 40px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transform: translateZ(0);
+  }
+
+  .navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+  }
+
+  .nav-logo-wrap {
+    position: relative;
+    display: inline-flex;
+    border-radius: 50%;
+  }
+
+  .nav-logo-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    padding: 2px;
+    background: conic-gradient(from 0deg, var(--primary-blue), #f59e0b, var(--primary-blue));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: opacity 0.35s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+  }
+
+  .nav-brand:hover .nav-logo-wrap::before { opacity: 1; transform: rotate(180deg); }
+
+  .nav-logo-img {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--white);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .nav-brand:hover .nav-logo-img { transform: scale3d(1.05, 1.05, 1) rotate(-5deg); }
+
+  .nav-brand-text {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    background: linear-gradient(90deg, var(--primary-blue) 0%, var(--primary-blue) 70%, #f59e0b 100%);
+    background-size: 250% 100%;
+    background-position: 0% 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .nav-brand:hover .nav-brand-text { background-position: 100% 0%; }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+
+  .nav-links a:hover { color: var(--primary-blue); }
+
+  .nav-cta {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 22px;
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  /* ---------- Shared bits ---------- */
+  .hero-pill {
+    background-color: var(--faint-blue);
+    color: var(--primary-blue);
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+  }
+
+  .btn-solid {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 13px 28px;
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  /* ---------- About Us ---------- */
+  .about-section { padding: 60px 24px 60px; }
+
+  .about-topline {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .about-card {
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+    padding: 52px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue), var(--gold));
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+
+  .about-copy .eyebrow {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .about-copy h2 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--text-main);
+  }
+
+  .about-copy p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-size: 15.5px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  .about-copy p:last-child { margin-bottom: 0; }
+
+  .about-copy strong {
+    color: var(--primary-blue);
+    font-weight: 800;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .about-stat-card {
+    background: var(--faint-blue);
+    border-radius: var(--radius-md);
+    padding: 22px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid rgba(30, 58, 138, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .about-stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(30, 58, 138, 0.12);
+  }
+
+  .about-stat-card.featured {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    border: none;
+  }
+
+  .about-stat-card.featured .stat-value,
+  .about-stat-card.featured .stat-value .stat-unit,
+  .about-stat-card.featured .stat-label {
+    color: var(--white);
+  }
+
+  .about-stat-card .stat-value {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: var(--primary-blue);
+    line-height: 1;
+  }
+
+  .about-stat-card .stat-value .stat-unit {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin-left: 2px;
+  }
+
+  .about-stat-card .stat-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+
+  /* ---------- Audience toggle ---------- */
+  .audience-toggle-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 30px 24px 10px;
+    position: sticky;
+    top: var(--nav-height);
+    z-index: 90;
+    background-color: var(--gray-light);
+  }
+
+  .audience-toggle {
+    display: flex;
+    width: 100%;
+    max-width: 460px;
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    padding: 4px;
+    box-shadow: var(--shadow-md);
+  }
+
+  .audience-toggle button {
+    flex: 1 1 0;
+    padding: 11px 20px;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .audience-toggle button.active {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+
+  /* ---------- Overview strip (shared) ---------- */
+  .overview-strip { padding: 40px 24px 70px; }
+
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .overview-card {
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 26px 22px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-left: 4px solid var(--accent-blue);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .overview-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.10);
+  }
+
+  .overview-card .card-icon {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+
+  .overview-card .card-value {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.4px;
+    color: var(--text-main);
+  }
+
+  .accent-blue-card { border-left-color: var(--accent-blue); }
+  .accent-blue-card .card-value { color: var(--primary-blue); }
+
+  .accent-gold-card { border-left-color: var(--gold); }
+  .accent-gold-card .card-value { color: #b45309; }
+
+  .accent-green-card { border-left-color: #16a34a; }
+  .accent-green-card .card-value { color: #15803d; }
+
+  .accent-purple-card { border-left-color: #9333ea; }
+  .accent-purple-card .card-value { color: #7e22ce; }
+
+  .overview-card .card-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+
+  /* ---------- Feature sections ---------- */
+  .audience-panel { display: none; }
+  .audience-panel.active { display: block; }
+
+  .section-heading {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 40px;
+  }
+
+  .section-heading .eyebrow {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+  }
+
+  .section-heading p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  /* ---------- Admin intro block ---------- */
+  .admin-intro-card {
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 40px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .admin-intro-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--gold), var(--accent-blue), var(--primary-blue));
+  }
+
+  .admin-intro-card p {
+    color: var(--text-muted);
+    line-height: 1.75;
+    font-size: 15.5px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    max-width: 900px;
+  }
+
+  .admin-intro-card p:last-of-type { margin-bottom: 24px; }
+
+  .admin-highlight {
+    background: var(--faint-blue);
+    border-left: 4px solid var(--gold);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    color: var(--text-main) !important;
+    font-weight: 600 !important;
+  }
+
+  .feature-copy .admin-highlight {
+    margin-top: 16px;
+  }
+
+  .admin-highlight strong {
+    color: var(--primary-blue);
+    font-weight: 900;
+  }
+
+  .admin-contact-btn {
+    display: inline-block;
+  }
+
+  /* ---------- Admin closing contact card ---------- */
+  .admin-closing-card {
+    background: #142a63;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 45px rgba(20, 42, 99, 0.35);
+    padding: 44px;
+    margin-top: 8px;
+  }
+
+  .admin-closing-card h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 14px;
+  }
+
+  .admin-closing-card > p {
+    color: #f1f5f9;
+    font-size: 15.5px;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .admin-email-link {
+    color: var(--white);
+    font-weight: 800;
+    text-decoration: underline;
+  }
+
+  .admin-email-link:hover {
+    color: var(--gold);
+  }
+
+  .admin-closing-list li {
+    color: #e2e8f0;
+    font-weight: 600;
+  }
+
+  .admin-closing-list li::before {
+    background: var(--gold);
+  }
+
+  .features-section { padding: 20px 24px 80px; }
+
+  .feature-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 36px;
+    margin-bottom: 24px;
+  }
+
+  .feature-block:nth-child(even) .feature-visual { order: 2; }
+  .feature-block:nth-child(even) .feature-copy { order: 1; }
+
+  .feature-visual {
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    background: var(--gray-light);
+    border: 1px dashed var(--card-border);
+    overflow: hidden;
+    min-height: 160px;
+    width: 100%;
+  }
+
+  .feature-visual img { width: 100%; height: auto; display: block; object-fit: contain; cursor: zoom-in; transition: opacity 0.2s ease; }
+  .feature-visual img:hover { opacity: 0.92; }
+
+  /* ---------- Image Lightbox ---------- */
+  .image-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.72);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 24px;
+  }
+
+  .image-lightbox.open {
+    display: flex;
+  }
+
+  .image-lightbox-content {
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    max-width: 70vw;
+    max-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-lightbox-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    background: var(--white);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  }
+
+  .image-lightbox-close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--white);
+    border: none;
+    color: var(--text-main);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  }
+
+  .image-lightbox-close:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+  }
+
+  @media (max-width: 700px) {
+    .image-lightbox-content { width: 92vw; height: 60vh; max-width: 92vw; max-height: 60vh; }
+    .image-lightbox-close { top: -14px; right: 0; }
+  }
+
+  .feature-copy .feature-index {
+    font-size: 13px;
+    color: var(--accent-blue);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .feature-copy h3 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    color: var(--text-main);
+  }
+
+  .feature-copy p {
+    color: var(--text-muted);
+    line-height: 1.65;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .feature-list li {
+    position: relative;
+    padding-left: 22px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .feature-list li a {
+    color: var(--accent-blue);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .feature-list li a:hover {
+    color: var(--primary-blue);
+  }
+
+  .feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+  }
+
+  /* ---------- Full-width feature block (analysis + leaderboard) ---------- */
+  .feature-block-full {
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 40px;
+    margin-bottom: 24px;
+  }
+
+  .feature-block-full .feature-index {
+    font-size: 13px;
+    color: var(--accent-blue);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .feature-block-full h3 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 18px;
+    color: var(--text-main);
+  }
+
+  .feature-list-wide {
+    max-width: 780px;
+    margin-bottom: 26px;
+  }
+
+  .leaderboard-banner {
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue));
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 24px;
+    border-radius: var(--radius-md);
+    margin-bottom: 28px;
+  }
+
+  .dual-image-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .dual-image-row .feature-visual {
+    width: 100%;
+  }
+
+  .dual-image-captions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 12px;
+  }
+
+  .dual-image-captions span {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-align: center;
+  }
+
+  /* ---------- Exam preview row: desktop view large, mobile view small ---------- */
+  .exam-preview-row {
+    grid-template-columns: 2.4fr 1fr;
+    align-items: end;
+  }
+
+  .feature-visual-small {
+    max-width: 260px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .exam-preview-captions {
+    grid-template-columns: 2.4fr 1fr;
+  }
+
+  .triple-image-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+  }
+
+  .triple-image-row .feature-visual {
+    width: 100%;
+  }
+
+  .triple-image-captions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    margin-top: 12px;
+  }
+
+  .triple-image-captions span {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-align: center;
+  }
+
+  /* ---------- Trust section (shared) ---------- */
+  .trust-section { padding: 20px 24px 80px; }
+
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .trust-card {
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 28px 24px;
+    min-height: 130px;
+    border-top: 4px solid var(--accent-blue);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .trust-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.10);
+  }
+
+  .trust-card.accent-blue-card { border-top-color: var(--accent-blue); }
+  .trust-card.accent-gold-card { border-top-color: var(--gold); }
+  .trust-card.accent-green-card { border-top-color: #16a34a; }
+
+  .trust-card h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--text-main);
+  }
+
+  .trust-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-section { padding: 20px 24px 90px; text-align: center; }
+
+  .cta-panel {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 56px 40px;
+    text-align: center;
+  }
+
+  .cta-panel h2 {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 12px;
+  }
+
+  .cta-panel p {
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    font-weight: 500;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid var(--card-border);
+    padding: 32px 24px;
+    background-color: var(--white);
+  }
+
+  .footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1000px) {
+    .container { padding: 0 20px; }
+    .about-card { padding: 40px; }
+  }
+
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+    .feature-block { grid-template-columns: 1fr; padding: 24px; }
+    .feature-block:nth-child(even) .feature-visual,
+    .feature-block:nth-child(even) .feature-copy { order: initial; }
+    .hero-pill { font-size: 11px; padding: 6px 16px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-card { padding: 30px; }
+    .about-stats { grid-template-columns: 1fr 1fr; }
+    .feature-block-full { padding: 24px; }
+    .admin-intro-card { padding: 24px; }
+    .admin-closing-card { padding: 26px; }
+    .dual-image-row, .dual-image-captions { grid-template-columns: 1fr; }
+    .exam-preview-row, .exam-preview-captions { grid-template-columns: 1fr; }
+    .feature-visual-small { max-width: 200px; }
+    .triple-image-row, .triple-image-captions { grid-template-columns: 1fr; }
+    .audience-toggle { max-width: 100%; }
+    .section-heading h2 { font-size: 24px; }
+  }
+
+  @media (max-width: 560px) {
+    .nav-brand-text { font-size: 17px; }
+    .nav-logo-img { height: 38px; width: 38px; }
+    .nav-cta { padding: 8px 16px; font-size: 13px; }
+    .about-stats { grid-template-columns: 1fr; }
+    .about-card { padding: 22px; }
+    .audience-toggle button { padding: 10px 12px; font-size: 13px; }
+    .cta-panel { padding: 36px 22px; }
+    .overview-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Focus visibility ---------- */
+  button:focus-visible, a:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="nav-logo-wrap">
+        <img src="CETWALLE_homepage_logo_image.png" alt="CETWALLE logo" class="nav-logo-img">
+      </span>
+      <span class="nav-brand-text">CETWALLE</span>
+    </div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#features">Features</a>
+      <a href="#trust">Why Us</a>
+    </div>
+    <a href="#cta" class="nav-cta">Get Started</a>
+  </nav>
+
+  <!-- ============ ABOUT US ============ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-topline">
+        <span class="hero-pill">By Toppers, For Future Toppers</span>
+      </div>
+      <div class="about-card">
+        <div class="about-grid">
+          <div class="about-copy">
+            <span class="eyebrow">About Us</span>
+            <h2>Built by one topper, for every future topper</h2>
+            <p>CETWALLE is built and published entirely by <strong>Harshvardhan Raut</strong> — every question, every note, every line of code on this platform is made by one person, not a company or a coaching franchise. It's currently maintained by him while pursuing IT at PICT (Pune Institute of Computer Technology), Pune.</p>
+            <p>The idea came from a gap he lived through himself: while preparing for HSC and MHT-CET, he couldn't find guidance that gave him the exact notes, the exact strategy, and the exact direction he needed — most of it was scattered, generic, or locked behind expensive coaching fees. CETWALLE exists so no student has to go through that same struggle alone.</p>
+            <p>This platform isn't a coaching center and isn't run by a counselor. It's built to be a friend on the same journey — advice given the way a senior or an elder brother would give it, not a service being sold. There's no intention to monetize this project; the only goal is to reach as many HSC and MHT-CET students as possible with guidance that's actually accurate and actually free.</p>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat-card featured">
+              <span class="stat-value">99.69<span class="stat-unit">%ile</span></span>
+              <span class="stat-label">MHT-CET PCM — 2nd Attempt</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="stat-value">99.13<span class="stat-unit">%ile</span></span>
+              <span class="stat-label">MHT-CET PCM — 1st Attempt</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="stat-value">1307</span>
+              <span class="stat-label">Rank — MHT-CET 2026</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="stat-value">PICT</span>
+              <span class="stat-label">B.Tech, IT — Pune</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AUDIENCE TOGGLE ============ -->
+  <div class="audience-toggle-wrap">
+    <div class="audience-toggle" id="audienceToggle">
+      <button type="button" class="active" data-audience="student">For Students</button>
+      <button type="button" data-audience="admin">For Admins &amp; Teachers</button>
+    </div>
+  </div>
+
+  <!-- ============ OVERVIEW STRIP (shared) ============ -->
+  <section class="overview-strip" id="overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-card accent-blue-card">
+          <span class="card-icon">📚</span>
+          <span class="card-value">38,000+</span>
+          <span class="card-label">MHT-CET questions analyzed</span>
+        </div>
+        <div class="overview-card accent-gold-card">
+          <span class="card-icon">🎯</span>
+          <span class="card-value">99.69%ile</span>
+          <span class="card-label">Founder's own MHT-CET score</span>
+        </div>
+        <div class="overview-card accent-green-card">
+          <span class="card-icon">🆓</span>
+          <span class="card-value">100% Free</span>
+          <span class="card-label">Notes, mocks &amp; strategy — no cost</span>
+        </div>
+        <div class="overview-card accent-purple-card">
+          <span class="card-icon">👨‍🏫</span>
+          <span class="card-value">Built Solo</span>
+          <span class="card-label">Every question &amp; note made personally</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE SECTIONS ============ -->
+  <section class="features-section" id="features">
+    <div class="container">
+
+      <!-- ---- STUDENT PANEL ---- -->
+      <div class="audience-panel active" id="panel-student">
+        <div class="section-heading">
+          <span class="eyebrow">For Students</span>
+          <h2>Everything you need to prepare for MHT-CET</h2>
+          <p>A full practice-to-progress loop — real exam conditions, honest analysis, and a way to see where you actually stand.</p>
+        </div>
+
+        <!-- Feature 1: Mock Exam Engine -->
+        <div class="feature-block-full">
+          <span class="feature-index">01 · Mock Exam Engine</span>
+          <h3>An exam experience that feels exactly like the real thing</h3>
+          <ul class="feature-list feature-list-wide">
+            <li>Mock tests built on the exact MHT-CET pattern — same section structure, same marking scheme, same question distribution</li>
+            <li>Timer, question palette, and navigation designed to match the actual exam dictation, not a generic quiz layout</li>
+            <li>Excellent mobile experience — swipe between questions, zoom into diagrams, and use the off-canvas palette, so you can practice from your phone with no compromise</li>
+            <li>Very high compatibility across mobile versions — the exam engine adapts cleanly to different screen sizes and devices, not just one phone model</li>
+            <li>A pre-test screen that walks you through instructions and exam details before you start, just like the real CET</li>
+          </ul>
+          <div class="dual-image-row exam-preview-row">
+            <div class="feature-visual">
+              <img src="image1.png" alt="CETWALLE mock exam running on desktop">
+            </div>
+            <div class="feature-visual feature-visual-small">
+              <img src="image121.png" alt="CETWALLE mock exam running on mobile">
+            </div>
+          </div>
+          <div class="dual-image-captions exam-preview-captions">
+            <span>Desktop view</span>
+            <span>Mobile view</span>
+          </div>
+        </div>
+
+        <!-- Feature 2: Analysis + Leaderboard -->
+        <div class="feature-block-full">
+          <span class="feature-index">02 · Post-Mock Analysis &amp; Leaderboard</span>
+          <h3>Know exactly where you went wrong — and where you stand</h3>
+          <ul class="feature-list feature-list-wide">
+            <li>Detailed analysis for every mock test, with a full solution explained for each question</li>
+            <li>An attractive, easy-to-read analysis page with graphical breakdowns of your accuracy, speed, and subject-wise performance</li>
+            <li>A leaderboard built from every student who attempted the same mock, so your score means something beyond a number</li>
+          </ul>
+          <div class="leaderboard-banner">
+            Check where you stand by competing with other students who gave the same mocks
+          </div>
+          <div class="dual-image-row">
+            <div class="feature-visual">
+              <img src="image2.png" alt="Graphical analysis of mock test performance">
+            </div>
+            <div class="feature-visual">
+              <img src="image3.png" alt="Question-wise solutions page">
+            </div>
+          </div>
+          <div class="dual-image-captions">
+            <span>Performance analysis — graphical breakdown</span>
+            <span>Solutions page — explained answer for every question</span>
+          </div>
+        </div>
+
+        <!-- Feature 3: Handwritten Digital Notes -->
+        <div class="feature-block-full">
+          <span class="feature-index">03 · Handwritten Digital Notes</span>
+          <h3>My own notes, digitised — the exact ones I used to crack MHT-CET</h3>
+          <ul class="feature-list feature-list-wide">
+            <li>These are digital copies of my own handwritten notes — the actual ones I made and used through my entire preparation, not something written up separately as "study material"</li>
+            <li>They carry my own shortcuts, my own formula sheets, and my own tricks for remembering chapters and topics — the same ones I relied on to revise Physics and Chemistry before my exams</li>
+            <li>Every concept comes with interactive diagrams and the complete formula laid out in detail — nothing summarised or cut short</li>
+            <li>Trust me on this — I used this exact material to revise, and it genuinely covers around 90% of the tricks that show up in exam questions</li>
+            <li>Every small formula is in there too — the ones that are easy to forget but keep showing up in the paper</li>
+            <li>Some things I've marked to just remember directly instead of solving — no point deriving them again and again under exam pressure</li>
+            <li>And separate quick-recall points made specifically for MCQs, for the moments when there's simply no time to work it out from scratch</li>
+            <li>All of it is completely free to download and use — no cost, no signup, no catch. I made these for myself first, and I'd genuinely love for them to help you too</li>
+          </ul>
+          <div class="triple-image-row">
+            <div class="feature-visual">
+              <img src="image4.png" alt="Handwritten digital notes page 1">
+            </div>
+            <div class="feature-visual">
+              <img src="image41.png" alt="Handwritten digital notes page 2">
+            </div>
+            <div class="feature-visual">
+              <img src="image42.png" alt="Handwritten digital notes page 3">
+            </div>
+          </div>
+          <div class="triple-image-captions">
+            <span>Notes preview — page 1</span>
+            <span>Notes preview — page 2</span>
+            <span>Notes preview — page 3</span>
+          </div>
+        </div>
+
+        <!-- Feature 4: Question Bank Analysis & Exam Strategy (text-only, no image) -->
+        <div class="feature-block-full">
+          <span class="feature-index">04 · Question Bank Analysis &amp; Exam Strategy</span>
+          <h3>38,000+ questions analyzed, so your practice actually counts</h3>
+          <ul class="feature-list feature-list-wide">
+            <li>Over 38,000 MHT-CET questions have been personally gone through and analyzed, just to build mock tests that actually feel like the real exam</li>
+            <li>All of that analysis is used to keep generating free practice mocks for students — the question bank keeps growing, and so do the mocks</li>
+            <li>Years of past MHT-CET papers have been studied to understand the real pattern of the exam — not guesswork, actual data</li>
+            <li>This is used to tell you exactly which topics carry how much weightage in the exam, chapter by chapter</li>
+            <li>You'll know exactly which topics are must-do in every chapter, and which ones you can safely deprioritize if you're short on time</li>
+            <li>Since I've personally given MHT-CET and scored well, the strategies I actually used to study — not textbook advice — are shared here directly</li>
+            <li>Includes guidance on how to split your time between Physics, Chemistry, and Maths/Biology based on real weightage, not assumptions</li>
+            <li>A running, evolving strategy — as more papers and patterns get analyzed, the advice here keeps getting sharper</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- ---- ADMIN PANEL ---- -->
+      <div class="audience-panel" id="panel-admin">
+        <div class="section-heading">
+          <span class="eyebrow">For Admins &amp; Teachers</span>
+          <h2>Host your own coaching platform on CETWALLE</h2>
+          <p>Everything built for students is also available to you as infrastructure — run it under your own coaching brand, for your own students.</p>
+        </div>
+
+        <!-- Admin intro paragraph block -->
+        <div class="admin-intro-card">
+          <p>If you're an independent teacher or run a coaching institute, CETWALLE can be hosted as your own platform — your branding, your students, your content, running on the same exam engine, analytics, and content system that powers CETWALLE itself. You don't need to build any of this from scratch, and you don't need a development team to maintain it.</p>
+          <p>Setup is kept intentionally affordable — a small one-time initialization cost to get your platform live, plus a minimal monthly maintenance fee to keep everything running. This isn't priced like enterprise coaching software; it's priced so that even a single teacher or a small institute can afford to run a professional, exam-accurate platform for their students.</p>
+          <p>Below is what the admin panel actually gives you — real tools for running a coaching operation, not just a content dashboard. If you'd like to see it in action, reach out and we'll walk you through it directly.</p>
+          <p>Want something more tailored? You can also contact us to get a fully custom version of this platform built entirely around your own demands and workflow — your own features, your own structure, built specifically for how your coaching actually works.</p>
+          <p class="admin-highlight">Whichever route you choose, CETWALLE only provides the backbone and the services running behind the scenes — <strong>CETWALLE branding is never visible on your coaching's platform.</strong> It's built to look, feel, and run as entirely your own.</p>
+          <a href="https://cetwalle.in.net/contactus" target="_blank" rel="noopener" class="btn-solid admin-contact-btn">Contact Us to Get Started →</a>
+        </div>
+
+        <!-- Feature 1: Student Overview & Individual Tracking -->
+        <div class="feature-block">
+          <div class="feature-visual">
+            <img src="image6.png" alt="Admin dashboard showing student list and progress">
+          </div>
+          <div class="feature-copy">
+            <span class="feature-index">01 · Student Overview &amp; Individual Tracking</span>
+            <h3>See every student on your platform, and go as deep as one</h3>
+            <ul class="feature-list">
+              <li>View the total number of students enrolled on your platform at a glance, with enrollment trends over time</li>
+              <li>Contact any individual student directly from their profile — no switching tools or hunting for contact details</li>
+              <li>Open a full progress view for each student: mocks attempted, accuracy trends, weak chapters, and activity over time</li>
+              <li>Spot students who've gone inactive or are falling behind early, instead of finding out at the end of a term</li>
+              <li>Compare a student's performance against your platform's overall average to see who needs extra attention</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2: Course & Item Deployment -->
+        <div class="feature-block-full">
+          <span class="feature-index">02 · Easy Course &amp; Product Deployment</span>
+          <h3>Launch a new course or product in minutes, not days</h3>
+          <ul class="feature-list feature-list-wide">
+            <li>Create a new course or add new items to an existing course through a simple, guided builder — no technical setup required</li>
+            <li>Choose exactly what kind of course you want to make, from a full subject course to a short focused chapter bundle</li>
+            <li>Choose exactly what kind of item you want to add inside it — a document/notes item, a video resource, or a scheduled mock test</li>
+            <li>Link any item directly to a scheduled mock test in a single click — no manual setup, no separate configuration, it just connects</li>
+            <li>Set pricing, access rules, and enrollment limits for each course independently, right from the same builder</li>
+            <li>Publish instantly or schedule a course/item to go live automatically on a future date — useful for batch-wise rollouts</li>
+            <li>Reuse existing content across multiple courses instead of re-uploading the same material every time</li>
+            <li>Preview exactly what a student will see before publishing, so nothing goes live half-finished</li>
+            <li>Edit, reorder, or take down any course or item at any time — full control stays with you, always</li>
+          </ul>
+          <div class="dual-image-row">
+            <div class="feature-visual">
+              <img src="image7.png" alt="Course creation interface for admins">
+            </div>
+            <div class="feature-visual">
+              <img src="image8.png" alt="Adding a new item inside a course">
+            </div>
+          </div>
+          <div class="dual-image-captions">
+            <span>Creating a new course — simple, guided setup</span>
+            <span>Adding a new item inside a course</span>
+          </div>
+        </div>
+
+        <!-- Feature 3: Question Database & Security -->
+        <div class="feature-block">
+          <div class="feature-visual">
+            <img src="image9.png" alt="Admin overview panel showing total questions in database">
+          </div>
+          <div class="feature-copy">
+            <span class="feature-index">03 · Question Database &amp; Data Security</span>
+            <h3>A database built for MHT-CET, and locked down properly</h3>
+            <ul class="feature-list">
+              <li>A question database of up to 40,000 questions, sourced entirely from past year exam papers, top-level reference books, and other trusted sources</li>
+              <li>Every question in the database is strictly MHT-CET level — nothing generic, nothing off-syllabus, nothing padded in just to inflate the count</li>
+              <li>Averages around 500–600 questions per chapter, giving enough depth for real chapter-wise practice, not just a handful of samples</li>
+              <li>The full question bank is fully secured and encrypted — this isn't a spreadsheet sitting in the open, it's built with real data protection behind it</li>
+              <li>Students cannot bypass the security layer to reach the raw question database or break into upcoming exam questions</li>
+              <li>Access to questions is always controlled through the exam engine itself — never exposed directly, never downloadable, never scrapeable</li>
+              <li>The database keeps growing over time as more papers and sources are analyzed and added in</li>
+              <li>You can go through our <a href="https://www.cetwalle.in.net/termsofuse" target="_blank" rel="noopener">Terms of Use</a> and <a href="https://www.cetwalle.in.net/privacypolicy" target="_blank" rel="noopener">Privacy Policy</a> for the full details on how data is handled and protected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 4: Mock Test Creation -->
+        <div class="feature-block-full">
+          <span class="feature-index">04 · Effortless Mock Test Creation</span>
+          <h3>Build a full mock test in minutes, exactly the way you want it</h3>
+          <ul class="feature-list feature-list-wide">
+            <li>Add questions to any mock test just as easily as picking them off a list — there's no complicated setup between you and a ready test</li>
+            <li>Choose questions manually, chapter by chapter, if you want full control over exactly what goes into the test</li>
+            <li>Or set it to fully random, and let the system pull a balanced set of questions straight from the 40,000-question database</li>
+            <li>Preview every question chapter-wise before finalizing, so you know exactly what students will see</li>
+            <li>Mix manual and random selection in the same test — hand-pick the questions that matter most, and let the system fill in the rest</li>
+            <li>Filter the question bank by chapter, difficulty, or question type while building a test, so finding the right questions takes seconds</li>
+            <li>Set the exact number of questions per chapter or subject to match any pattern you want to test</li>
+            <li>Once built, a mock can be scheduled, linked to a course, or published instantly — no separate step required</li>
+            <li>The entire builder is designed to be simple enough that creating a full mock takes minutes, not hours — no technical effort needed on your end</li>
+          </ul>
+          <div class="triple-image-row">
+            <div class="feature-visual">
+              <img src="image10.png" alt="Mock test creation process step 1">
+            </div>
+            <div class="feature-visual">
+              <img src="image11.png" alt="Choosing questions for a mock test">
+            </div>
+            <div class="feature-visual">
+              <img src="image12.png" alt="Previewing questions chapter-wise before publishing">
+            </div>
+          </div>
+          <div class="triple-image-captions">
+            <span>Starting a new mock test</span>
+            <span>Choosing questions — manual or random</span>
+            <span>Chapter-wise preview before publishing</span>
+          </div>
+        </div>
+
+        <!-- Feature 5: Exam-Time Security -->
+        <div class="feature-block">
+          <div class="feature-visual">
+            <img src="image13.png" alt="Network tab showing how exam questions are securely delivered to the browser">
+          </div>
+          <div class="feature-copy">
+            <span class="feature-index">05 · Exam-Time Security</span>
+            <h3>The security wall doesn't come down once the exam starts</h3>
+            <ul class="feature-list">
+              <li>Students can't break the security wall while a mock is running — browser dev tools can't be used to pull questions or answers mid-exam</li>
+              <li>Questions travel through a very high level of encryption end-to-end, so there's no bypassing the exam portal to access them directly</li>
+              <li>Every mock generates its own session token, valid only for the device that started the exam — it can't be reused or shared from another device</li>
+              <li>If someone tries to access the exam from a second device using the same session, it simply won't work — the token is locked to the original device</li>
+              <li>Timing for every single question is tracked individually for each student, not just the total test time</li>
+              <li>That question-wise timing is shown back to the student on the review page after the exam, as part of their performance analysis</li>
+              <li>All of this runs quietly in the background — students get a smooth exam experience with none of the security machinery visible or in the way</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 6: Student Contact Requests -->
+        <div class="feature-block">
+          <div class="feature-visual">
+            <img src="image14.png" alt="Admin panel showing student contact requests">
+          </div>
+          <div class="feature-copy">
+            <span class="feature-index">06 · Student Contact Requests</span>
+            <h3>When a student needs to reach you, it shows up right in your panel</h3>
+            <ul class="feature-list">
+              <li>Students can raise a request to contact their teacher directly from their own account</li>
+              <li>Every request shows up in the admin panel, so nothing gets missed in an email inbox or a random message somewhere</li>
+              <li>You can see exactly what the student needs help with before reaching out, instead of starting the conversation blind</li>
+              <li>Contact the student directly from the same panel, without switching to another app or tool</li>
+              <li>Mark requests as resolved once handled, so you always know which students are still waiting on a reply</li>
+              <li>Keeps every student-teacher interaction organized in one place, even as your platform grows</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 7: Error Reports & Bonus Marking -->
+        <div class="feature-block">
+          <div class="feature-visual">
+            <img src="image15.png" alt="Admin panel showing error reports and bonus question marking">
+          </div>
+          <div class="feature-copy">
+            <span class="feature-index">07 · Error Reports &amp; One-Click Bonus Marking</span>
+            <h3>Students flag issues, you fix them in seconds</h3>
+            <ul class="feature-list">
+              <li>Students can report errors they spot in the portal while attempting an exam — a wrong option, a rendering issue, anything that looks off</li>
+              <li>Every report lands directly in the admin panel, so you can see exactly what students are running into as it happens</li>
+              <li>Open any report to see the full detail of the issue before deciding what to do about it</li>
+              <li>Reports can be reviewed and closed once addressed, keeping the queue clean and up to date</li>
+            </ul>
+            <p class="admin-highlight">Teachers can also see any reports raised for a specific question in an exam and mark that question as a <strong>bonus question</strong> — full marks are then awarded to every student for that question automatically. It only takes a single click, so there's genuinely nothing to worry about here.</p>
+          </div>
+        </div>
+
+        <!-- Admin closing contact card -->
+        <div class="admin-closing-card">
+          <h3>Ready to bring this to your coaching?</h3>
+          <p>For more enquiries and full details, reach out directly at <a href="mailto:harshvardhanraut2912@gmail.com" class="admin-email-link">harshvardhanraut2912@gmail.com</a> — you'll get all the information you need by just getting in touch.</p>
+          <ul class="feature-list feature-list-wide admin-closing-list">
+            <li>Any coaching can fully customize this platform to match their own theme and branding, from colors and logo down to the overall feel of the site</li>
+            <li>Get started with your own version of the platform, set up and ready to run in a short time — no long onboarding process</li>
+            <li>Maintenance, services, and support are provided for a lifetime, so you're never left figuring things out alone once you're live</li>
+            <li>All of this is available for a very low monthly rent — priced to make sense for a single teacher or a growing institute alike</li>
+            <li>New features and improvements built into CETWALLE roll out to your platform too, at no extra cost</li>
+            <li>Focus entirely on teaching and your students — the technical side, hosting, updates, and security are handled for you</li>
+            <li>No long-term lock-in — the platform is built to grow with your coaching, not the other way around</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ============ TRUST SECTION (shared) ============ -->
+  <section class="trust-section" id="trust">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Why Us</span>
+        <h2>Why students trust CETWALLE</h2>
+        <p>No coaching brand, no sales pitch — just data, honesty, and a platform built the hard way.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card accent-blue-card">
+          <h3>🔒 Your data stays yours</h3>
+          <p>Built on Supabase with row-level security — your scores, attempts, and progress are never exposed or shared. No leaked answer keys, no shortcuts on security.</p>
+        </div>
+        <div class="trust-card accent-gold-card">
+          <h3>🎓 Built by someone who's been there</h3>
+          <p>Made by a 99.69%ile MHT-CET scorer who used this exact content — mocks, notes, and strategy — to prepare. Not a company guessing what students need.</p>
+        </div>
+        <div class="trust-card accent-green-card">
+          <h3>💯 Genuinely free, always</h3>
+          <p>No hidden fees, no premium paywalls on the essentials. This platform exists to help as many students as possible, not to make money off them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA (text swaps with toggle) ============ -->
+  <section class="cta-section" id="cta">
+    <div class="cta-panel">
+      <h2 id="ctaHeading">Ready to start preparing the smart way?</h2>
+      <p id="ctaSubtext">Free mocks, free notes, and a strategy built from 38,000+ analyzed questions — everything you need is already here.</p>
+      <a href="#" class="btn-solid" id="ctaButton">Start Practicing Free</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="CETWALLE_homepage_logo_image.png" alt="CETWALLE logo" style="height:26px;width:26px;border-radius:50%;">
+        <span>CETWALLE — By Toppers, For Toppers</span>
+      </div>
+      <div class="footer-links">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#trust">Why Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ IMAGE LIGHTBOX ============ -->
+  <div class="image-lightbox" id="imageLightbox">
+    <div class="image-lightbox-content">
+      <button type="button" class="image-lightbox-close" id="imageLightboxClose" aria-label="Close">&times;</button>
+      <img src="" alt="" id="imageLightboxImg">
+    </div>
+  </div>
+
+  <script>
+    // Audience toggle logic — swaps visible feature panel + CTA copy state
+    const toggle = document.getElementById('audienceToggle');
+    const buttons = toggle.querySelectorAll('button');
+    const panels = document.querySelectorAll('.audience-panel');
+
+    const ctaCopy = {
+      student: {
+        heading: 'Ready to start preparing the smart way?',
+        subtext: 'Free mocks, free notes, and a strategy built from 38,000+ analyzed questions — everything you need is already here.',
+        button: 'Start Practicing Free'
+      },
+      admin: {
+        heading: 'Want to bring your teaching onto CETWALLE?',
+        subtext: 'Upload content, track your students, and reach learners who need real guidance — set up in minutes.',
+        button: 'Apply as Admin / Teacher'
+      }
+    };
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const audience = btn.dataset.audience;
+        buttons.forEach(b => b.classList.toggle('active', b === btn));
+        panels.forEach(p => p.classList.toggle('active', p.id === `panel-${audience}`));
+
+        const copy = ctaCopy[audience];
+        if (copy) {
+          document.getElementById('ctaHeading').textContent = copy.heading;
+          document.getElementById('ctaSubtext').textContent = copy.subtext;
+          document.getElementById('ctaButton').textContent = copy.button;
+        }
+      });
+    });
+
+    // Image lightbox — click any feature image to zoom to 70% of screen
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('imageLightboxImg');
+    const lightboxClose = document.getElementById('imageLightboxClose');
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+      lightboxImg.src = '';
+    }
+
+    document.querySelectorAll('.feature-visual img').forEach(img => {
+      img.addEventListener('click', () => openLightbox(img.src, img.alt));
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    // Click outside the image (on the dark overlay) closes it
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Escape key also closes it
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+  </script>
+
+</body>
+</html>
